@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bella Studio — Hair & Beauty Salon</title>
+<meta name="description" content="Bella Studio: haircuts, coloring and beauty treatments. Book on WhatsApp in seconds.">
+<style>
+:root{--brand:#b0476b;--brand-dark:#7d2f4b;--ink:#1f1a1c;--muted:#6b6266;--bg:#fff8f5;--card:#fff;--line:#eadcd8;--wa:#25d366}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+a{color:inherit}
+.container{max-width:1080px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,248,245,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:22px;color:var(--brand-dark);text-decoration:none;letter-spacing:-.5px}
+nav ul{display:flex;gap:24px;list-style:none}
+nav ul a{text-decoration:none;color:var(--muted);font-weight:500}
+nav ul a:hover{color:var(--brand)}
+.hero{padding:96px 0 80px;background:radial-gradient(circle at 80% 20%,#f6d5dd 0,transparent 55%)}
+.hero h1{font-size:clamp(36px,6vw,60px);line-height:1.08;letter-spacing:-1.5px;max-width:640px}
+.hero h1 span{color:var(--brand)}
+.hero p{font-size:20px;color:var(--muted);margin:20px 0 32px;max-width:520px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:16px}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-ghost{border:2px solid var(--brand);color:var(--brand);margin-left:10px}
+section{padding:72px 0}
+h2{font-size:34px;letter-spacing:-.8px;margin-bottom:8px}
+.lead{color:var(--muted);margin-bottom:36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.card .ico{font-size:32px}
+.card h3{margin:12px 0 6px}
+.card .price{color:var(--brand);font-weight:700;margin-top:10px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about .img{aspect-ratio:4/3;border-radius:22px;background:linear-gradient(135deg,#f3c6d3,#b0476b);display:flex;align-items:center;justify-content:center;font-size:90px}
+.hours li{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:8px 0;list-style:none}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:14px}
+label{font-weight:600;font-size:14px}
+input,textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;margin-top:4px;background:#fffdfc}
+input:focus,textarea:focus{outline:2px solid var(--brand);border-color:transparent}
+.btn-primary{background:var(--brand);color:#fff;justify-content:center}
+.ok{display:none;background:#e9f9ee;color:#17663a;padding:12px;border-radius:10px}
+iframe{width:100%;height:100%;min-height:360px;border:0;border-radius:18px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px;text-align:center}
+.wa-float{position:fixed;right:20px;bottom:20px;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.2);z-index:20}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@media (max-width:760px){
+  nav ul{display:none}
+  .about,.contact{grid-template-columns:1fr}
+  .btn-ghost{margin:12px 0 0}
+  .hero{padding:64px 0 56px}
+}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+  <a class="logo" href="#">Bella Studio</a>
+  <ul><li><a href="#services">Services</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li></ul>
+</nav></div></header>
+
+<main>
+<section class="hero"><div class="container">
+  <h1>Look your best, <span>feel your best.</span></h1>
+  <p>Haircuts, coloring and beauty treatments in the heart of the city. Book in seconds on WhatsApp.</p>
+  <a class="btn btn-wa" href="https://wa.me/5500000000000?text=Hi!%20I'd%20like%20to%20book%20an%20appointment" target="_blank" rel="noopener">💬 Book on WhatsApp</a>
+  <a class="btn btn-ghost" href="#services">See services</a>
+</div></section>
+
+<section id="services"><div class="container">
+  <h2>Services</h2>
+  <p class="lead">Everything you need, done with care.</p>
+  <div class="grid">
+    <div class="card"><div class="ico">✂️</div><h3>Haircut & Styling</h3><p>Cut, wash and blow-dry, tailored to you.</p><div class="price">from $25</div></div>
+    <div class="card"><div class="ico">🎨</div><h3>Coloring</h3><p>Highlights, balayage and full color.</p><div class="price">from $60</div></div>
+    <div class="card"><div class="ico">💅</div><h3>Nails</h3><p>Manicure, pedicure and gel finish.</p><div class="price">from $20</div></div>
+    <div class="card"><div class="ico">✨</div><h3>Skin Care</h3><p>Facials and treatments to relax and glow.</p><div class="price">from $40</div></div>
+  </div>
+</div></section>
+
+<section id="about" style="background:#fff"><div class="container about">
+  <div class="img" aria-hidden="true">💇‍♀️</div>
+  <div>
+    <h2>About us</h2>
+    <p class="lead">A small, friendly studio where every client gets our full attention. Quality products, honest prices, and a team that loves what they do.</p>
+    <ul class="hours">
+      <li><span>Mon – Fri</span><b>9:00 – 19:00</b></li>
+      <li><span>Saturday</span><b>9:00 – 16:00</b></li>
+      <li><span>Sunday</span><b>Closed</b></li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="contact"><div class="container">
+  <h2>Get in touch</h2>
+  <p class="lead">Send us a message and we'll get back to you the same day.</p>
+  <div class="contact">
+    <form id="form">
+      <label>Name<input name="name" required autocomplete="name"></label>
+      <label>Phone or email<input name="contact" required></label>
+      <label>Message<textarea name="message" rows="4" required></textarea></label>
+      <button class="btn btn-primary" type="submit">Send message</button>
+      <div class="ok" id="ok">Thanks! We'll contact you soon.</div>
+    </form>
+    <iframe title="Location map" loading="lazy" src="https://maps.google.com/maps?q=Avenida%20Paulista%2C%20S%C3%A3o%20Paulo&z=15&output=embed"></iframe>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="container">© Bella Studio · Demo website — fictional business, built as a portfolio sample.</div></footer>
+
+<a class="wa-float" href="https://wa.me/5500000000000" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 0 0 0-.4l-.8-1.9c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .1-1.2c0-.1-.2-.2-.5-.3z"/></svg></a>
+
+<script>
+// Demo only: in a real project this posts to an automation webhook (e.g. n8n) that forwards the lead to WhatsApp/email/CRM.
+document.getElementById('form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  this.reset();
+  document.getElementById('ok').style.display = 'block';
+});
+</script>
+</body>
+</html>
